@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Variable Scope</title>
+    <script>
+        // class BlockDemo {
+        //     public static void main (String[] args){
+        //         boolean condition = true;
+        //         if (condtion){//begin block 1
+        //         int x = 1;
+        //         System.out.printIn("Condition is true.");
+        //         System.out.printIn("Value of x: " + x);
+        //         }//end block one
+        //         else{//begin block 2
+        //         System.out.printIn("Condition is false.");
+        //         System.out.printIn("Value of x: " + x);
+        //         }//end block 2
+        //     }
+        // }
+        function xyz(){
+            if(true){
+                var x = 5;
+            }
+            else{
+                x = 6;
+                console.log(x)
+            }
+        }
+        console.log(xyz())
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

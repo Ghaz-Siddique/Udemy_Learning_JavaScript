@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>if-else Statement</title>
+    <script>
+        function is_leap_year(year){
+            if(year % 400 == 0){
+                return "Leap Year";
+            }
+            else if ((year % 4 == 0) && (year % 100 != 0)){
+                return "Leap Year";
+            }
+            else{
+                return "Not a Leap Year";
+            }
+        }
+        console.log(is_leap_year(2016))
+        console.log(is_leap_year(2018))
+        console.log(is_leap_year(2020))
+        console.log(is_leap_year(2022))
+    </script>
+</head>
+<body>
+    
+</body>
+</html>   
